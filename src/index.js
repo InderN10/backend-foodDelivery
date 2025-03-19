@@ -4,8 +4,10 @@ import dotenv from "dotenv";
 import { usersRouter } from "./routes/users-route.js";
 import { foodsRouter } from "./routes/food-route.js";
 import { foodOrderRouter } from "./routes/food-order-route.js";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 dotenv.config();
 const port = 3000;
 
