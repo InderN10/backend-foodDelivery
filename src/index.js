@@ -7,9 +7,10 @@ import { foodOrderRouter } from "./routes/food-order-route.js";
 import cors from "cors";
 
 const app = express();
-app.use(cors());
 dotenv.config();
-const port = 3000;
+const port = 4000;
+app.use(cors());
+app.use(express.json());
 
 mongoose.connect(process.env.MONGO_CENECTION_STRING).then(() => {
   console.log("Connected to MongoDB");

@@ -18,3 +18,9 @@ export const addFood = async (req, res) => {
   }
 };
 
+// {    "foodName": "Hawai pizza",
+//       "price": "35000",
+//       "image": "uwyefuywgeuf",
+//       "ingredients": "Хан боргоцой, Гахайн мах, Улаан лоолийн соус, Моццарелла бяслаг",
+//       "category": "67da2cb6650452331f9301fd"
+// }
